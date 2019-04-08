@@ -16,7 +16,7 @@
         
         function reiwa() {
             let result2 = Math.floor( (today - reiwaDay) / 86400000);
-            if (result2 <= 0) {
+            if (result2 < 0) {
                 result2 = result2 * - 1;
                 return "<h4>あと " + result2 + " 日で元号が令和に変わります</h4>";
             } else {
