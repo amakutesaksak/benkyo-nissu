@@ -1,3 +1,58 @@
-.inner{
-    text-align: center;
+body {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: 'Dotum';
+    border-bottom: 2px solid;
+}
+
+header h1 span {
+    font-size: 36px;
+    margin-top: 100px;
+}
+
+.contents {
+    border-bottom: 1px solid;;
+}
+
+.contents h1 {
+    font-size: 28px;
+    color: black;
+}
+
+#programingDay {
+    display:inline;
+}
+
+#startedDayYear {
+    display:inline;
+}
+
+#startedDayMonth {
+    display:inline;
+}
+
+#startedDayDate {
+    display:inline;
+}
+
+#todayYear {
+    display:inline;
+}
+
+#todayMonth {
+    display:inline;
+}
+
+#todayDate {
+    display:inline;
+}
+
+footer {
+    text-align: right;
 }
