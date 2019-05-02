@@ -14,16 +14,6 @@
          */
         const result = Math.floor( (today - startedDay) / 86400000 + 1);
 
-        function reiwa() {
-            let result2 = Math.floor( (today - newEraName) / 86400000);
-            if (result2 < 0) {
-                result2 = result2 * - 1;
-                return "あと " + result2 + " 日で元号が令和に変わります";
-            } else {
-                result2 = result2 + 1;
-                return "元号が令和に変わってから " + resutl2 + " 日目です";
-            }
-        }
 
         const startedDayYear = startedDay.getFullYear();
         const startedDayMonth = startedDay.getMonth() + 1;
@@ -51,7 +41,16 @@
         programingDayDivided.innerText = result;
         
         const eraNameDayDivided = document.getElementById('eraNameDay');
-        eraNameDayDivided.innerText = reiwa();
+
+        let result2 = Math.floor( (today - newEraName) / 86400000);
+        if (result2 < 0) {
+            result2 = result2 * -1;
+            eraNameDayDivided.innerText = (`あと ${result2} 日で元号が令和に変わります`);
+            }else {
+            result2 = result2 + 1;
+            eraNameDayDivided.innerText = (`元号が令和に変わってから ${result2} 日目です`);
+        }
+        
 
         /**
         document.write("<h1>@amakutesaksak がプログラミングを始めてから " + result + " 日目です</h1>");
